@@ -42,10 +42,10 @@ const Home = () => {
             
               <Link to={`/movie_detail/${e.id}`} key={e.id}>
                  <div
-              className="flex flex-col  w-[200px] p-4 border rounded shadow overflow-x-auto "
+              className="flex flex-col  w-[200px] h-[400px] p-4 border rounded  font-serif shadow-2xl "
               key={idx}
               >
-              <img
+              <img className="rounded-xl"
                 src={`https://image.tmdb.org/t/p/w200${e.poster_path}`}
                 alt={e.title}
               />
