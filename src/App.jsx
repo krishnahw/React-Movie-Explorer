@@ -1,9 +1,11 @@
-import { useState } from 'react'
+
 
 import './App.css'
 import Home from './components/Home'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
-import Header from './utility/Header'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import SearchDetail from './components/SearchDetail'
+import MovieDetail from './components/MovieDetail'
+
 
 
 function App() {
@@ -14,6 +16,9 @@ function App() {
 
     <Routes>
       <Route path='/' element={<Home/>} />
+      <Route path='/search' element={<SearchDetail/>} />
+      <Route path='/movie_detail/:id' element={<MovieDetail/>} />
+
     </Routes>
     </BrowserRouter>
  )
