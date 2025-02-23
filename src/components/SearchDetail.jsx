@@ -24,9 +24,10 @@ const SearchDetail = () => {
             className="flex flex-col  w-[200px] h-[400px] p-4 border rounded shadow overflow-x-auto "
             key={idx}
           >
-             <img
+             <img 
+             className="rounded-xl"
               src={`https://image.tmdb.org/t/p/w200${e.poster_path}`}
-              alt="Mufasa"
+              alt={e.title}
             />
             <p>Name: {e.title}</p>
             <p> Date: {e.release_date}</p>

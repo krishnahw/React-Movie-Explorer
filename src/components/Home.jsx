@@ -4,15 +4,16 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [data, setData] = useState(null);
+  const [page, setPage] = useState(1)
 
   useEffect(() => {
-    homeTab();
-  }, []);
+    homeTab(page);
+  }, [page]);
 
-  const homeTab = async () => {
+  const homeTab = async (pageNumber) => {
     try {
       const respons = await fetch(
-        `https://api.themoviedb.org/3/discover/movie`,
+        `https://api.themoviedb.org/3/discover/movie?page=${pageNumber}`,
         {
           headers: {
             Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
@@ -58,6 +59,23 @@ const Home = () => {
           );
         })}
       </div>
+
+        <div className="flex justify-center gap-4 mt-5 mb-3">
+          <button onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
+            disabled={page === 1}
+            className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
+            >
+              Previous
+
+          </button>
+          <span className="text-xl font-bold">{page}</span>
+          <button onClick={() => setPage((prev) => prev + 1)} 
+          className="px-4 py-2 bg-blue-500 text-white rounded"
+          >
+            Next
+          </button>
+        </div>
+
     </div>
   );
 };
