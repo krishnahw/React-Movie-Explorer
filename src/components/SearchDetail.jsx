@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom"
 import Header from "../utility/Header"
 
 
+
 const SearchDetail = () => {
 
     const location = useLocation()
@@ -38,6 +39,8 @@ const SearchDetail = () => {
             
       })}
         </div>
+
+       
     </div>
   )
 }

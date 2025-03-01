@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Header from '../utility/Header'
+import Favorite from './Favorite'
 
 const MovieDetail = () => {
     const {id} = useParams()
@@ -44,15 +45,22 @@ const MovieDetail = () => {
                 alt={movie.original_title}
             />
             <div className=' font-serif m-3 gap-3  flex flex-col'>
-            <p className='font-semibold text-xl'>Name: {movie.original_title}</p>
+            <p className='font-semibold text-xl'>Name: {movie.title}</p>
             <p className='font-semibold text-xl'>Date: {movie.release_date}</p>
             <p className='font-semibold text-xl'>Status: {movie.status}</p>
             <p className='font-semibold text-xl'>In Short: {movie.tagline}</p>
             <p className='font-semibold text-xl'>Duration: {movie.runtime}mins</p>
             <p className='font-semibold text-xl'>IMDB: {movie.vote_average}</p>
             <p className='font-semibold text-xl'>Overview: {movie.overview}</p>
+
+            <div> <Favorite value={movie.id} /></div>
             </div>
+
+
+          
       </div>
+
+      
     </div>
   )
 }
