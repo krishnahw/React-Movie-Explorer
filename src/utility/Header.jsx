@@ -9,11 +9,11 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex justify-between p-5 bg-emerald-700">
-        <h1 className="font-semibold text-3xl">Movies</h1>
+      <div className="flex justify-between p-5 bg-black text-white">
+        <h1 className="font-semibold text-3xl font-serif">Movies</h1>
         <button
           onClick={handleHome}
-          className="hover:bg-emerald-400 rounded hover:scale-120 transition-transform text-xl "
+          className="hover:bg-gray-700 p-2 rounded hover:scale-120 transition-transform text-xl font-serif"
         >
           Home
         </button>

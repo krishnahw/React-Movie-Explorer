@@ -29,7 +29,7 @@ const Favorite = (id) => {
       
 
       if(data.success){
-        toast.success(" Movie added to favorites!", { position: "top-right",pauseOnHover: true, closeOnClick: true,style: { background: "#333", color: "#fff" } });
+        toast.success(" Movie added to favorites!", { position: "top-right",pauseOnHover: true, closeOnClick: true, });
       }else{
         toast.error(" An error occurred while adding to favorites.", {
           position: "top-right",
@@ -40,13 +40,13 @@ const Favorite = (id) => {
     } catch (error) {
       console.log('fetch error', error);
  
-      toast.error(" An error occurred while adding to favorites." , { position: "top-right",pauseOnHover: true, closeOnClick: true,style: { background: "#333", color: "#fff", padding:"5px", fontSize:"20px" }  })
+      toast.error(" An error occurred while adding to favorites." , { position: "top-right",pauseOnHover: true, closeOnClick: true,  })
       
     }
    }
   return (
     <div className="mt-5 font-serif">
-       <button className="bg-amber-400 p-3 text-xl rounded font-medium" onClick={addMovieFavorite}>Add To Favorite</button>
+       <button className="bg-cyan-700 p-3 text-xl rounded font-medium" onClick={addMovieFavorite}>Add To Favorite</button>
        
     </div>
   )

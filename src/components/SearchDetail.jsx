@@ -16,13 +16,13 @@ const SearchDetail = () => {
   return (
     <div>
       <Header/>
-      <h1 className="flex justify-end mt-5 w-[30%] text-3xl font-bold">Search Result</h1>
+      <h1 className="flex justify-end mt-5 w-[30%] text-3xl font-bold font-serif">Search Result</h1>
         <div className="grid grid-flow-col grid-rows-5 gap-15 mt-10 mb-10 justify-center">
         {results.map((e,idx)=>{
            return(
              <Link to={`/movie_detail/${e.id}`} key={e.id}>
               <div
-            className="flex flex-col  w-[200px] h-[400px] p-4 border rounded shadow overflow-x-auto "
+            className="flex flex-col  w-[200px] h-[400px] p-4 border rounded shadow-2xl overflow-x-auto "
             key={idx}
           >
              <img 

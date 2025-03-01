@@ -27,8 +27,8 @@ const Search = () => {
 
   return (
     <div className="mt-5 w-full flex justify-center gap-5  p-5">
-      <input  className="w-[50%]   p-2 rounded-xl border" type="text" placeholder="Search Movie..." value={query} onChange={(e) =>{setQuery(e.target.value)}} />
-      <button className="bg-blue-500 rounded-xl p-2 hover:scale-95" onClick={handleSearch}>Search</button>
+      <input  className="w-[50%]   p-2 rounded-xl border font-serif" type="text" placeholder="Search Movie..." value={query} onChange={(e) =>{setQuery(e.target.value)}} />
+      <button className="bg-gray-700 rounded-xl p-2 hover:scale-90 font-serif" onClick={handleSearch}>Search</button>
     </div>
   )
 }

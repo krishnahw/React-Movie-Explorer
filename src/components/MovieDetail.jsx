@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Header from '../utility/Header'
 import Favorite from './Favorite'
+import WatchLaater from './WatchLaater'
 
 const MovieDetail = () => {
     const {id} = useParams()
@@ -53,7 +54,11 @@ const MovieDetail = () => {
             <p className='font-semibold text-xl'>IMDB: {movie.vote_average}</p>
             <p className='font-semibold text-xl'>Overview: {movie.overview}</p>
 
-            <div> <Favorite value={movie.id} /></div>
+            <div className='flex gap-5'>
+               <Favorite value={movie.id} />
+               <WatchLaater value={movie.id} />
+
+            </div>
             </div>
 
 

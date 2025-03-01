@@ -28,13 +28,13 @@ const Home = () => {
     }
   };
 
- 
+  
 
   return (
     <div>
       <Header />
 
-      <h1 className="flex justify-end mt-5 w-[30%] text-3xl font-bold">Trending Now</h1>
+      <h1 className="flex justify-end mt-5 w-[30%] text-3xl font-bold font-serif">Trending Now</h1>
 
       <div className="grid grid-flow-col grid-rows-5 gap-15 mt-10 mb-10 justify-center">
         {data?.results?.map((e, idx) => {
