@@ -36,4 +36,4 @@ React-Movie-Explorer/
 
 ## 📸 Screenshot
 
-<img src="./Screenshot(30).png" width="800"/>
+<img src="./Screenshot.png" width="800"/>
