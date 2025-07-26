@@ -1,8 +1,39 @@
-# React + Vite
+# 🎬 React Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive movie search app built with **React.js** and **The Movie Database (TMDB) API**. Users can search for movies in real-time and view key details like posters, ratings, and release dates.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Click to View App](https://react-movie-explorer-ten.vercel.app)
+
+## 🔧 Tech Stack
+
+- ⚛️ React (with functional components & hooks)
+- 📡 Axios (for API requests)
+- 🎞️ TMDB API (movie data)
+- 🎨 CSS / Tailwind (optional for styling)
+- 🚀 Vercel (deployment)
+
+## 💡 Features
+
+- 🔍 Movie search by title
+- 🎞️ Poster, title, release year, and rating display
+- 📱 Responsive UI for all devices
+- ⚠️ Error handling for failed requests
+- ⏳ Loading feedback during API calls (optional to add)
+
+## 📂 Folder Structure
+
+React-Movie-Explorer/
+├── public/
+├── src/
+│ ├── components/
+│ ├── pages/
+│ ├── App.js
+│ └── index.js
+├── .env (for API key)
+└── README.md
+
+## 📸 Screenshot
+
+<img src="./Screenshot(30).png" width="800"/>
